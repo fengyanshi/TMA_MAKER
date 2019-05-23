@@ -1,0 +1,150 @@
+ -------------- LOG FILE -----------------
+ 2D_beach                                                                        
+  --------------input start --------------
+                                          
+                                          
+ -------------- GRID INFO -----------------
+ Mglob=     250 Nglob=     500
+ DX=        2.00 DY=        2.00
+ DEPTH_TYPE:SLOPE                                             
+DEPTH_FLAT        8.00
+ SLP=        0.05
+ Xslp=      300.00
+                                          
+ -------------- TIME INFO -----------------
+ TOTAL_TIME=      200.00
+ PLOT_INTV=         2.00
+ SCREEN_INTV=        2.00
+                                          
+ -------------- HOT START -----------------
+                                          
+ -------------- STILL WATER INFO -----------------
+       WaterLevel =      0.00000
+                                          
+ -------------- WAVEMAKER -----------------
+ WAVEMAKER:WK_IRR                                            
+                 Time_ramp Default:  0.0
+                  Delta_WK Default:  0.5
+     Nfreq for TMA or JON                               NOT DEFINED, USE 45
+    Ntheta for TMA or JON                               NOT DEFINED, USE 24
+                         Ywidth_WK Default:  LARGE
+ Xc_WK   =        150.00
+ Yc_WK   =        0.00
+ Ywidth_WK=   999999.00
+ DEP_WK  =          8.00
+ Time_ramp=         0.00
+ Delta_WK=          0.50
+    Nfreq=            45
+   Ntheta=            24
+ FreqPeak=          0.10
+ FreqMin =          0.05
+ FreqMax =          0.30
+ Hmo     =          1.00
+ GammaTMA=         10.00
+ ThetaPeak=         0.00
+ Sigma_Theta=       20.00
+                                          
+ -------------- PERIODIC BC -----------------
+  PERIODIC: F
+                                          
+ -------------- SPONGE -----------------
+                   DIRECT_SPONGE IS USED
+                 FRICTION_SPONGE IS USED
+ FRICTION_SPONGE CDsponge=        1.00
+                 R_sponge Default:  0.85
+                  A_sponge Default:  5.0
+ Sponge_west_width =      100.00
+ Sponge_east_width =        0.00
+ Sponge_south_width=        0.00
+ Sponge_north_width=        0.00
+ R_sponge          =        0.85
+ A_sponge          =        5.00
+              No WavemakerCurrentBalance
+                                          
+ -------- OBSTACLE and BREAKWATER -----------------
+ OBSTACLE_FILE:   NO
+    BREAKWATER_FILE:   NO
+     BreakWaterAbsorbCoef Default:  10.0
+                                          
+ -------------- PHYSICS -----------------
+         DISPERSION Default:  DISPERSION
+        Gamma1 Default:  1.0: DISPERSION
+              Gamma2 Default:  1.0: Full nonlinear
+               Beta_ref Default:  -0.531
+                      Gamma3 Default:  1.0: NOT fully linear
+  Summary of Physics
+ Gamma1 =         1.00
+ Gamma2 =         1.00
+Beta_ref=        -0.53
+ Gamma3 =         1.00
+ VISCOSITY_BREAKING IS USED
+               SWE_ETA_DEP Default:  0.8
+             Friction_Matrix Default:  constant Cd
+Cd_fixed             0.00
+                                          
+ -------------- NUMERICS -----------------
+       Time_Scheme Default:  Runge_Kutta
+ TIME_SCHEME:Runge_Kutta                                       
+  CONSTRUCTION                              NOT DEFINED, USE HLL
+ CONSTRUCTION:HLLC                                              
+  HIGH_ORDER                     NOT DEFINED, USE FOURTH-ORDER
+ HIGH_ORDER:FOURTH                                            
+ CFL=        0.50
+  FroudeCap=        1.00
+             MinDepthFrc Default:  0.1 m
+          USE MIN(MinDepthFrc, MinDepth)
+ MinDepth=    0.100000
+ MinDepthFrc=        0.10
+                                          
+ -------- WAVE BREAKING -----------------
+            SHOW_BREAKING Default:  TRUE
+ Cbrk1 =    0.650000
+ Cbrk2 =    0.350000
+            WAVEMAKER_Cbrk Default:  1.0
+  WAVEMAKER_Cbrk =         1.000000
+           WAVEMAKER_VIS Default:  FALSE
+                                          
+ ------- WAVE-AVERAGED PROPERTY -----------------
+                     C_smg Default:  0.0
+ T_INTV_mean =  100.000000
+ STEADY_TIME =  100.000000
+ C_smg =    0.000000
+                    nu_bkg Default:  0.0
+                                          
+ -------------- OUTPUT INFO -----------------
+ RESULT_FOLDER:output/                                           
+         OUTPUT_RES NOT FOUND, OUTPUT_RES=1: full resolution
+     OUTPUT_RES         1
+      OUT_DEPTH T
+          OUT_U F
+          OUT_V F
+        OUT_ETA T
+       OUT_Hmax F
+       OUT_Hmin F
+       OUT_Umax F
+      OUT_MFmax F
+     OUT_VORmax F
+       OUT_MASK T
+      OUT_MASK9 F
+      OUT_Umean T
+      OUT_Vmean T
+    OUT_ETAmean T
+ OUT_WaveHeight T
+        OUT_SXL F
+        OUT_SXR F
+        OUT_SYL F
+        OUT_SYR F
+    OUT_SourceX F
+    OUT_SourceY F
+          OUT_P F
+          OUT_Q F
+         OUT_Fx F
+         OUT_Fy F
+         OUT_Gx F
+         OUT_Gy F
+        OUT_AGE F
+         OUT_NU F
+        OUT_TMP F
+                                          
+  --------------input end --------------
+                                          
