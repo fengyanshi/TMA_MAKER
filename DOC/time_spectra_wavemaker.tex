@@ -3,6 +3,7 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{lineno}
+\usepackage{hyperref}
 
 \usepackage{epstopdf}
 \usepackage{epsfig}
@@ -32,22 +33,19 @@
  
  \section{Summary}
  
- 1) The problem was caused by the wave-coherence which occurs as  phases for specified wave components are the same. The finding provides an extreme example with 100\% wave-coherence. . 
+ 1) The problem was caused by the wave-coherence which occurs as  phases for specified wave components are the same. The finding shows an extreme case with 100\% wave-coherence. 
  
- 2) I used a simple MATLAB program to identify the problem. See the matlab scripts in the package. 
+ 2) I used a simple MATLAB program to identify the problem. See the matlab scripts in the package, /Linear\_Program/
  
- 3) In the modified funwave code I added a random function to generate random phases if a user does not specify phases in input files. I also implemented an option which a user can make an output of the linear theoretical solution to compare  the numerical solution.  
+ 3) In the modified Funwave code, I added a random function to generate random phases if a user does not specify phases in the input files. I also implemented an option that allows a user to output the linear theoretical solution for comparison with the numerical solution.  
  
  4) The time-dependent spectral wavemaker is documented in details. Hope it can help with further documentation/reports. 
  
- 5)Please use the matlab programs provided in the package to check the results. Feel free to ask me if you have any questions. 
- 
- 
  \section{The problem  } 
   
-  Figure \ref{spec} shows the spectral distribution from your file: spectral\_data\_1.txt. I assume that the data is wave amplitude for each df\_ddir cell and has a unit of meter. The significant wave height is 0.3704.  The matlab program for this plot can be found /Linear\_Program/mk\_spec\_brocc.m. 
+  Figure \ref{spec} shows the spectral distribution from your file: spectral\_data\_1.txt. I assume that the data is wave amplitude for each $\delta f \delta d$ cell and has a unit of meter. The significant wave height is 0.3704.  The matlab program for this plot can be found /Linear\_Program/mk\_spec\_brocc.m. 
   
-The problem is that, when you directly use the spectral files, the wave surface calculated from the model shows an inhomogeneous distribution of wave height as shown in Figure \ref{tmp}. In fact, the inhomogeneous distribution is not from any bugs in the code. It is from a strong wave-coherence, which occurs as the wave phases are the same at the wavemaker. Figure \ref{theoretical} shows the theoretical solution of wave surface using the spectral file. It has the same pattern as the numerical solution. The theoretical solution will be described later in this doc. 
+The problem was found that, when you directly use the spectral files, the wave surface calculated from the model shows an inhomogeneous distribution of wave height, as shown in Figure \ref{tmp}. This inhomogeneous distribution is not due to any bugs in the code. It results from strong wave coherence, which occurs because the wave phases are the same at the wavemaker. Figure \ref{theoretical} shows the theoretical solution of the wave surface using the spectral file. It has the same pattern as the numerical solution. The theoretical solution will be described later in this document.
   
  \begin{figure}
 \begin{center}
@@ -85,7 +83,7 @@ u_{i,j}  = u_{s} + (u_{i,j}  - u_{s})/C_s
 \be
 v_{i,j}  = v_{s} + (v_{i,j}  - v_{s})/C_s
 \ee
-where $(_{s})$ is the sources which can be any spatial distribution of hydrodynamic conditions, such as tidal, surge conditions, and wave conditions. Here, we focus on wave conditions, which are the linear solution on a flat bottom. The damping function is the   
+where $( )_{s}$ is the sources which are  the spatial distribution of any hydrodynamic conditions, such as tidal, surge conditions, and wave conditions. Here, we focus on wave conditions, which are specified based on the linear solution on a flat bottom. The damping function is the   
  same as that used in a sponge layer (see sponge layer section for detail), i.e., at the west boundary,
  \be
  C_s (i,j) = \alpha_s^{\gamma_s^{i-1}}
@@ -102,7 +100,7 @@ where $(_{s})$ is the sources which can be any spatial distribution of hydrodyna
   \be
  v^l = a^l \sigma^l \frac{\cosh k^l(h+z_\alpha)}{\sinh k^l h} \cos(k_x^l x + k_y^l y - \sigma^l t + \phi^l))\sin(\theta^l)
  \ee
- where $(a, k, \sigma, \theta)^l$ are wave amplitude, wavenumber, angular frequency, and wave angle, respectively, for component $l$. ($k^l_x,k^l_y$) are the wavenumber components in $(x,y)$:  $k^l_x = k^l \cos\theta^l, k^l_y = k^l \sin \theta^l$.  $z_\alpha$ is the $z$ at the reference level defined in the Boussinesq theory.  Note that $\phi^l)$ is the phase for component $l$. You will see later that is super-important for us to solve the issue. 
+ where $(a, k, \sigma, \theta)^l$ are wave amplitude, wavenumber, angular frequency, and wave angle, respectively, for component $l$. ($k^l_x,k^l_y$) are the wavenumber components in $(x,y)$:  $k^l_x = k^l \cos\theta^l, k^l_y = k^l \sin \theta^l$.  $z_\alpha$ is the $z$ at the reference level defined in the Boussinesq theory.  Note that $\phi^l$ is the phase for component $l$. You will see later that is critical for us to solve the issue. 
  
  The solution for $l=[1,2,... L]$ can be obtained by summating all wave components, for example, for wave surface,
  \be
@@ -125,9 +123,9 @@ where $(_{s})$ is the sources which can be any spatial distribution of hydrodyna
  \section{Verification}
  The problem can be verified using a simple matlab program (in package /Linear\_Program/), mk\_spec\_brocc.m. It reads the file, spectra\_data\_1.txt (now brocch\_data.txt), and draws the wave surface based on (\ref{eta}). 
  
- When set up case1='zero\_phase', $\phi^{(l_f,l_d)} = 0.0$, the wave surface is shown in Figure \ref{zero_phase}. You can make an animation by setting TIME=[0:100]. 
+ When setting up case1='zero\_phase', $\phi^{(l_f,l_d)} = 0.0$, the wave surface is shown in Figure \ref{zero_phase}. An animation can be found in the folder. You can make an animation by setting TIME=[0:100]. 
  
- When set up case1='rand\_phase', the program uses the random function $rand$ to generate $\phi^{(l_f,l_d)}$ with random numbers. The solution for the surface is shown in Figure \ref{rand_phase}. 
+ When setting up case1='rand\_phase', the program uses the random function $rand$ to generate $\phi^{(l_f,l_d)}$ with random numbers $0 \sim 2\pi$. The solution for the surface is shown in Figure \ref{rand_phase}. 
   \begin{figure}
 \begin{center}
  \includegraphics[width=0.6\textwidth]{figures/zero_phase.png}
@@ -143,8 +141,8 @@ where $(_{s})$ is the sources which can be any spatial distribution of hydrodyna
  \end{center}
  \end{figure}
  
- \section{Improvement of the code for avoiding the problem}
- The matlab program proved that the issue was caused by the coherence between wave components. Here, the code was modified by adding the random function in the time-dependent spectra module. When a user doesn't provide phase information (a 2D array), the program uses random phases to construct the boundary condition. A check-up output is provided by setting TMP = T in input.txt. The output files are a series of surface elevation based on the linear solution (flat bottom), tmp\_xxxxx. A user can compare eta\_xxxxx and tmp\_xxxxx to see the consistency. 
+ \section{Code improvement for avoiding the problem}
+ The matlab program proved that the issue was caused by the coherence between wave components. Here, the code was modified by adding the random function in the time-dependent spectra module. When a user doesn't provide phase information (a 2D array), the program uses random phases to construct the boundary condition. A check-up output can be made by setting TMP = T in input.txt. The output files for the check-up are a series of surface elevation based on the linear solution (flat bottom), tmp\_xxxxx. A user can compare eta\_xxxxx and tmp\_xxxxx to check consistency. 
  
  As an example, Figure \ref{funwave_theory} shows a comparison between the funwave result (eta\_00150) and the linear solution (tmp\_00150). 
  
@@ -155,8 +153,26 @@ where $(_{s})$ is the sources which can be any spatial distribution of hydrodyna
  \label{funwave_theory}
  \end{center}
  \end{figure}
+
+ \section{Test package}
  
- In conclusion, my feeling is that wave-coherence can be an important problem if the phases are not prescribed in the model.   Salatin et al., (2021) recently addressed the issue in general applications and implemented a new wavemaker in FUNWAVE, which is able to model $0 \sim 100\%$ wave coherence. Please refer to the sample cases in the FUNWAVE package /simple\_cases/wave\_coherence/. 
+ \href{https://github.com/fengyanshi/TMA_MAKER}{https://github.com/fengyanshi/TMA\_MAKER}
+ 
+ including
+ 
+ 1)  \href{https://github.com/fengyanshi/TMA_MAKER/tree/master/LInear_Program}{matlab script}
+  
+ 2)  \href{https://github.com/fengyanshi/TMA_MAKER/tree/master/DOC}{this document}
+ 
+ 3)  \href{https://github.com/fengyanshi/TMA_MAKER/tree/master/references}{references}
+ 
+ 4)  \href{https://github.com/fengyanshi/TMA_MAKER/tree/master/TEST_CASE}{your case in a smaller domain}
+
+\vspace{1cm}
+ 
+ In conclusion, my feeling is that wave-coherence can be an important problem if the phases are not prescribed in the model. Although setting random phases in the model can't guarantee 0\% wave coherence, it can reduce the coherent patterns. We don't know if wave coherence exists in the open coast without strong coastal geometric feature, as discussed in Zhang et al. (2022).   Salatin et al., (2021) recently addressed the issue in general applications and implemented a new wavemaker in FUNWAVE, which is able to simulate $0 \sim 100\%$ wave coherence. Please refer to the sample cases in the FUNWAVE package /simple\_cases/wave\_coherence/. 
+  
+  
   
   
 \end{document}

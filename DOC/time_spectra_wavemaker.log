@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  24 JAN 2025 19:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  25 JAN 2025 09:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -209,27 +209,135 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 \linenoamsmath@ams@eqpen=\count290
 LaTeX Info: Redefining \\ on input line 3180.
 )
-(/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
-Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
-
-(/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2024/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)) (/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
+(/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count291
+)
+\@linkdim=\dimen162
+\Hy@linkcounter=\count292
+\Hy@pagecounter=\count293
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count294
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count295
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen163
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count296
+\Field@Width=\dimen164
+\Fld@charsize=\dimen165
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count297
+\c@Item=\count298
+\c@Hfootnote=\count299
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count300
+\c@bookmark@seq@number=\count301
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip57
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -246,8 +354,8 @@ e
 )))
 (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen162
-\epsfysize=\dimen163
+\epsfxsize=\dimen166
+\epsfysize=\dimen167
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
@@ -255,96 +363,109 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 (./time_spectra_wavemaker.aux)
 \openout1 = `time_spectra_wavemaker.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count291
-\scratchdimen=\dimen164
+\scratchcounter=\count302
+\scratchdimen=\dimen168
 \scratchbox=\box61
-\nofMPsegments=\count292
-\nofMParguments=\count293
+\nofMPsegments=\count303
+\nofMParguments=\count304
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count294
-\MPscratchDim=\dimen165
-\MPnumerator=\count295
-\makeMPintoPDFobject=\count296
+\MPscratchCnt=\count305
+\MPscratchDim=\dimen169
+\MPnumerator=\count306
+\makeMPintoPDFobject=\count307
 \everyMPtoPDFconversion=\toks28
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+Package hyperref Info: Link coloring OFF on input line 25.
+ (./time_spectra_wavemaker.out) (./time_spectra_wavemaker.out)
+\@outlinefile=\write4
+\openout4 = `time_spectra_wavemaker.out'.
 
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/spectral.jpg, id=1, 1171.37625pt x 878.28125pt>
+<figures/spectral.jpg, id=31, 1171.37625pt x 878.28125pt>
 File: figures/spectral.jpg Graphic file (type jpg)
 <use figures/spectral.jpg>
-Package pdftex.def Info: figures/spectral.jpg  used on input line 54.
+Package pdftex.def Info: figures/spectral.jpg  used on input line 52.
 (pdftex.def)             Requested size: 345.0pt x 258.67528pt.
-<figures/tmp.jpg, id=2, 1063.975pt x 1036.87375pt>
+<figures/tmp.jpg, id=32, 1063.975pt x 1036.87375pt>
 File: figures/tmp.jpg Graphic file (type jpg)
 <use figures/tmp.jpg>
-Package pdftex.def Info: figures/tmp.jpg  used on input line 62.
+Package pdftex.def Info: figures/tmp.jpg  used on input line 60.
 (pdftex.def)             Requested size: 345.0pt x 336.20473pt.
-<figures/theory.jpg, id=3, 1171.37625pt x 878.28125pt>
+<figures/theory.jpg, id=33, 1171.37625pt x 878.28125pt>
 File: figures/theory.jpg Graphic file (type jpg)
 <use figures/theory.jpg>
-Package pdftex.def Info: figures/theory.jpg  used on input line 70.
+Package pdftex.def Info: figures/theory.jpg  used on input line 68.
 (pdftex.def)             Requested size: 345.0pt x 258.67528pt.
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./f
 igures/spectral.jpg>] [3 <./figures/tmp.jpg>] [4 <./figures/theory.jpg>] [5]
-<figures/zero_phase.png, id=33, 560.0925pt x 932.48375pt>
+<figures/zero_phase.png, id=85, 560.0925pt x 932.48375pt>
 File: figures/zero_phase.png Graphic file (type png)
 <use figures/zero_phase.png>
-Package pdftex.def Info: figures/zero_phase.png  used on input line 133.
+Package pdftex.def Info: figures/zero_phase.png  used on input line 131.
 (pdftex.def)             Requested size: 207.0021pt x 344.62941pt.
-<figures/rand_phase.png, id=35, 541.02126pt x 915.42pt>
+<figures/rand_phase.png, id=87, 541.02126pt x 915.42pt>
 File: figures/rand_phase.png Graphic file (type png)
 <use figures/rand_phase.png>
-Package pdftex.def Info: figures/rand_phase.png  used on input line 140.
+Package pdftex.def Info: figures/rand_phase.png  used on input line 138.
 (pdftex.def)             Requested size: 207.0021pt x 350.25177pt.
-<figures/theory_funwave_150.jpg, id=36, 1171.37625pt x 878.28125pt>
+ [6 <./figures/zero_phase.png>] [7 <./figures/rand_phase.png>]
+<figures/theory_funwave_150.jpg, id=105, 1171.37625pt x 878.28125pt>
 File: figures/theory_funwave_150.jpg Graphic file (type jpg)
 <use figures/theory_funwave_150.jpg>
-Package pdftex.def Info: figures/theory_funwave_150.jpg  used on input line 153
+Package pdftex.def Info: figures/theory_funwave_150.jpg  used on input line 151
 .
 (pdftex.def)             Requested size: 345.0pt x 258.67528pt.
- [6] [7 <./figures/zero_phase.png>] [8 <./figures/rand_phase.png>] [9 <./figure
-s/theory_funwave_150.jpg>] (./time_spectra_wavemaker.aux)
+ [8 <./figures/theory_funwave_150.jpg>] [9] (./time_spectra_wavemaker.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+Package rerunfilecheck Info: File `time_spectra_wavemaker.out' has not changed.
+
+(rerunfilecheck)             Checksum: EC01602B1CB3D451A585E8CB099F65AC;873.
  ) 
 Here is how much of TeX's memory you used:
- 4658 strings out of 474116
- 71398 string characters out of 5743682
- 1938187 words of memory out of 5000000
- 26954 multiletter control sequences out of 15000+600000
+ 10822 strings out of 474116
+ 165695 string characters out of 5743682
+ 1940187 words of memory out of 5000000
+ 33014 multiletter control sequences out of 15000+600000
  563483 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,7n,79p,617b,285s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,7n,79p,693b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -360,10 +481,10 @@ e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-Output written on time_spectra_wavemaker.pdf (9 pages, 5713369 bytes).
+Output written on time_spectra_wavemaker.pdf (9 pages, 5717992 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 
