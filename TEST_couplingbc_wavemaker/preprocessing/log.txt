@@ -1,0 +1,10 @@
+coupling data
+boundary info: num of points, start point
+EAST
+	0		1
+WEST
+	0		1
+SOUTH
+	200		1
+NORTH
+	200		1
