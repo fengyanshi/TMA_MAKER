@@ -157,7 +157,12 @@ Program FUNWAVE_TVD
 # endif
 
      USE TIDE_MODULE
+
      USE TIME_SPECTRA_MODULE
+
+# if defined (MAP2D_ABS_GEN)
+     USE ABS_GEN_2D_MODULE
+# endif
 
      IMPLICIT NONE
 
@@ -213,6 +218,10 @@ Program FUNWAVE_TVD
 
      CALL INITIALIZATION
 
+# if defined (MAP2D_ABS_GEN)
+     CALL MAPPING_INITIAL
+# endif
+
 ! time dependent wave spectra
 
      IF(WaveMaker(1:12)=='TIME_SPECTRA') THEN
@@ -220,6 +229,7 @@ Program FUNWAVE_TVD
      ENDIF
 
      CALL TIDE_INITIAL
+
 
      IF(WaveMaker(1:12)=='TIME_SPECTRA') THEN
 !    time spectra only use tide abs_gen and tide data type
@@ -316,7 +326,6 @@ Program FUNWAVE_TVD
          CALL OneWayCoupling
 # endif
 
- 
      CALL ESTIMATE_DT(Mloc,Nloc,DX,DY,U,V,H,MinDepthFrc,DT,CFL,TIME)
 
 # if defined (DEBUG)
@@ -350,6 +359,11 @@ Program FUNWAVE_TVD
        IF(TideBcType(1:4)=='DATA')THEN
          CALL TIDE_DATA
        ENDIF
+
+# if defined (MAP2D_ABS_GEN)
+     CALL MAP2D_READ_DATA
+# endif
+
 
 # if defined (DEBUG)
 #    if defined (PARALLEL)
@@ -448,6 +462,26 @@ Program FUNWAVE_TVD
        CALL FOAM_BC
 # endif
        
+         
+
+# if defined (MAP2D_ABS_GEN)
+          CALL MAP2D_BC
+# else
+       IF(WaveMaker(1:3)=='ABS' .OR. WaveMaker(1:12)=='TIME_SPECTRA') THEN
+         CALL ABSORBING_GENERATING_BC
+
+# if defined (DEBUG)
+#    if defined (PARALLEL)
+       IF(myid==0) WRITE(*,*) 'ABS or TIME_SPECTRA wavemaker'     
+#    else   
+       WRITE(*,*) 'ABS or TIME_SPECTRA wavemakerwavemaker'
+#    endif
+# endif
+       ENDIF
+
+# endif
+  ! end map2d
+
        CALL EXCHANGE
 
 # if defined (DEBUG)
@@ -461,20 +495,6 @@ Program FUNWAVE_TVD
 # if defined (COUPLING)
        CALL OneWayCoupling
 # endif
-         
-
-       IF(WaveMaker(1:3)=='ABS' .OR. WaveMaker(1:12)=='TIME_SPECTRA') THEN
-         CALL ABSORBING_GENERATING_BC
-
-# if defined (DEBUG)
-#    if defined (PARALLEL)
-       IF(myid==0) WRITE(*,*) 'ABS or TIME_SPECTRA wavemaker'     
-#    else   
-       WRITE(*,*) 'ABS or TIME_SPECTRA wavemakerwavemaker'
-#    endif
-# endif
-
-       ENDIF
 
        IF(WaveMaker(1:11)=='LEFT_BC_IRR') THEN
          CALL IRREGULAR_LEFT_BC

@@ -378,6 +378,12 @@ MODULE GLOBAL
                   OUT_BrkdisX = .FALSE., &
                   OUT_BrkdisY = .FALSE.
 
+# if defined (MAP2D_ABS_GEN)
+       LOGICAL :: OUT_MAP2D_ETA=.FALSE., &
+                  OUT_MAP2D_U=.FALSE., &
+                  OUT_MAP2D_V=.FALSE.
+# endif
+
 
 !# if defined (CARTESIAN)
 ! periodic boundary conditions

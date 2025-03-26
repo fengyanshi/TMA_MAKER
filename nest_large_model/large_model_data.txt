@@ -1,0 +1,22 @@
+eta, u, v data from a large-scale model
+2 2 ! M_DATA N_DATA
+! 2d x-coordinate 
+0 1000
+0 1000
+! 2d y-coordinate
+0 0
+1200 1200
+0.0   -time
+0.0 0.0 - eta
+0.0 0.0
+0.0 0.0  - u
+0.0 0.0
+0.0  0.0 - v
+0.0 0.0 
+500.0   -time
+0.5 0.1 - eta
+0.0 0.0
+0.0 0.0  - u
+0.0 0.0
+0.0 0.0 - v
+0.0 0.0 

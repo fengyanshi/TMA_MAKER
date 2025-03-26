@@ -66,6 +66,9 @@ SUBROUTINE OUTPUT
 # if defined(FOAM)
      USE MOD_FOAM
 # endif
+# if defined(MAP2D_ABS_GEN)
+     USE ABS_GEN_2D_MODULE
+# endif
 
     IMPLICIT NONE
 
@@ -4315,6 +4318,9 @@ SUBROUTINE PREVIEW
 # if defined(FOAM)
      USE MOD_FOAM
 # endif
+# if defined(MAP2D_ABS_GEN)
+     USE ABS_GEN_2D_MODULE
+# endif
 
 
      IMPLICIT NONE
@@ -4610,6 +4616,21 @@ SUBROUTINE PREVIEW
         call PutFile(TMP_NAME,EtaFoam)
 # endif
 ! end foam
+
+# if defined(MAP2D_ABS_GEN)
+     IF(OUT_MAP2D_ETA)THEN
+        TMP_NAME = TRIM(FDIR)//'eta_map_'//TRIM(FILE_NAME)
+         call PutFile(TMP_NAME,ETA_2D_MAP)
+     ENDIF  
+     IF(OUT_MAP2D_U)THEN
+        TMP_NAME = TRIM(FDIR)//'u_map_'//TRIM(FILE_NAME)
+         call PutFile(TMP_NAME,U_2D_MAP)
+     ENDIF  
+     IF(OUT_MAP2D_V)THEN
+        TMP_NAME = TRIM(FDIR)//'v_map_'//TRIM(FILE_NAME)
+         call PutFile(TMP_NAME,V_2D_MAP)
+     ENDIF     
+# endif
 
      IF(OUT_TMP)THEN
         TMP_NAME = TRIM(FDIR)//'tmp_'//TRIM(FILE_NAME)

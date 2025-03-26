@@ -1,0 +1,16 @@
+! file contains freq/dire bins and file names for time-dependent spectra
+! numbers of freq  and direction bins (two integers)
+1 1 
+! frequencies (1/s, column array)
+0.1
+! directions (Cartesian degree, column array) 
+0.0
+! phases (empty = 0)
+0
+! time (s) and file name (string)
+0.0
+spectra_data_1.txt
+100.0
+spectra_data_2.txt
+2000.0
+spectra_data_3.txt
