@@ -31,20 +31,24 @@
 {\bf \Large Nesting FUNWAVE in a large-scale wave-averaged model}
  \end{center}
  
- \section{The idea }
- 
- Nesting FUNWAVE in a large-scale wave-averaged model has three steps
+ \section{The nesting idea }
  
  \noindent
- 1) interpolate the results $(u,v,\eta)$, from the large-scale model into the FUNWAVE grid. 
+ Nesting FUNWAVE in a large-scale wave-averaged model has three steps:
  
- As shown in Figure \ref{two_grid}, the output region(grid point, red dots ) of the large-scale model should cover the entire FUNWAVE grid, which avoids any extrapolation. The grid of the large-scale model should be a structured grid, either curvilinear or rectangular grid. Values at $A$ are obtained from interpolations within the angle (1,2,3) marked in the Figure (see detailed in the next section). 
- 
+ \vspace{0.5cm}
  \noindent
- 2) incorporate the large-scale model results into the sponge layer
+ 1) interpolate the results, $(u,v,\eta)$, from the large-scale model into the FUNWAVE grid. 
  
- Figure \ref{sponge} shows sponge layers for example. The sponge layers can be configured in any of the four boundaries. In the current case, WEST, SOUTH, and NORTH sponges are specified. 
+ As shown in Figure \ref{two_grid}, the region for the large-scale model output(grid point, red dots ) should cover the entire FUNWAVE grid, avoiding any extrapolation. The grid of the large-scale model should be a structured grid, either curvilinear or rectangular grid. Values at $A$ are obtained from interpolations conducted within the angle (1,2,3) marked in the Figure (see detailed in the next section).  ({\bf Let me know if you prefer JONSWAP, TMA, or data-based spectra. The advantage of using the formula-based spectra (JON or TMA) is that spectral components can be split using an equal-energy method. The wavemaker only needs Hsig, peak period and spreading parameters, which can be obtained from SWAN or WWIII. So you wouldn't worry about how to pre-processing the spectral data.})
  
+  \vspace{0.5cm}
+ \noindent
+ 2) incorporate the large-scale model results into long-wave passing sponge layers
+ 
+ Figure \ref{sponge} shows sponge layers as an example. The sponge layers can be configured in any of the four boundaries. In the current case, WEST, SOUTH, and NORTH sponges are specified. The east boundary is the coast. The sponge layers are long-wave passing, meaning the results from the large-scale model can pass through the sponge layers, while absorbing short waves from the inside domain. 
+ 
+  \vspace{0.5cm}
  \noindent
  3) make waves at the wavemaker location
  
@@ -53,7 +57,7 @@
   \begin{figure}
 \begin{center}
  \includegraphics[width=1.0\textwidth]{figures/two_grids.pdf}
- \caption{Interpolation triangle }
+ \caption{Interpolation triangle. The dashed triangle is used for the linear interpolation as explained by Figure \ref{triangle} }
  \label{two_grid}
  \end{center}
  \end{figure}
@@ -61,7 +65,7 @@
   \begin{figure}
 \begin{center}
  \includegraphics[width=1.0\textwidth]{figures/sponge_2d.jpg}
- \caption{2D sponge layers }
+ \caption{2D sponge layers. In this application, the long-wave passing sponge layers are applied at the west, south, and north boundaries. The east boundary is shoreline. }
  \label{sponge}
  \end{center}
  \end{figure}
@@ -69,7 +73,7 @@
  \section{Interpolation} 
   
   Interpolation or extrapolation (not suggested) is  employed between a structured grid of a large-scale model
- and the FUNWAVE grid.  A linear interpolation method is performed.
+ and a FUNWAVE grid.  A linear interpolation method is performed.
 As shown in Figure \ref{triangle}, an interpolation
 value at  point $A$ in the FUNWAVE grid is evaluated by the values at three points, $1,
 2$ and $3$, of a triangle in the large-scale model grid which surrounds point $A$.  Four triangle areas
@@ -108,7 +112,7 @@ To save computational time for interpolation/extrapolation, $S_{\alpha
  \end{figure}
   
 
-\section{The new module}
+\section{The new module, 2D nesting module}
    
  The new module is called  `ABS\_GEN\_2D\_MODULE' in mod\_2d\_abs\_gen.F. To activate this module, you should specify 
  
@@ -124,9 +128,9 @@ BC\_SOUTH\_NEST = T  \\
 BC\_NORTH\_NEST = T  \\
 MappingDataFileName = large\_model\_data.txt   
  
-In the application,  BC\_EAST\_NEST = F is applied, meaning no sponge and large-scale model results are needed. The nesting boundary conditions will be applied on WEST, SOUTN, and NORTH boundaries. 
+In this application,  BC\_EAST\_NEST = F is applied, meaning no sponge at the east boundary.  The large-scale model results at the east boundary will not be applied, even they are provided. The long-wave passing boundary conditions will be applied on WEST, SOUTN, and NORTH boundaries only. 
 
-large\_model\_data.txt contains the large-scale model results in time. The following is an example of the data format:
+The file, large\_model\_data.txt, contains large-scale model results in time. The following is an example of the data format:
 
 \vspace{0.5cm}
 \noindent
@@ -154,19 +158,23 @@ eta, u, v data from a large-scale model (void line) \\
 0.0 0.0  
 
    
-\section{Example}
+\section{Example and results}
 
 The example can be found in /nest\_large\_model/. Procedures:
 
-1) compile and code in the example folder
+1) compile the code in the example folder
 
-2) check input.txt
+2) check input.txt, given in the example folder
 
 3) run the model
 
 4) matlab scripts can be found in /postprocessing/
 
-The following are two plots from the example. 
+\vspace{0.5cm}
+\noindent
+In this example,  the large-scale model results are specified in large\_model\_data.txt, as shown in the last section. Four grid points (2x2) in the large-scale model  are used, with x-coordinate range of (0 1000) and y-coordinate range of (0 1200) in meters. Note that the reference is (0,0), which is the origin of the FUNWAVE coordinates. A surface slope (eta) is specified, changing with time from 0 to 500 s. Zero velocity is specified on purpose of surface gradient driven currents. 
+
+Figure \ref{surface} shows the surface elevation at 399 s, with the FUNWAVE result on the left, and the large-model result on the right. The large-scale slope can be seen in the FUNWAVE result, indicating the large-scale model results pass through the sponge layers. The slope can also be shown in the wave-averaged elevation from FUNWAVE (Figure \ref{mean}, left), in comparison with the large-scale data (right). 
 
  \begin{figure}
 \begin{center}
@@ -183,6 +191,20 @@ The following are two plots from the example.
  \label{mean}
  \end{center}
  \end{figure}  
+  
+  \section{Package}
+  
+  I updated the package in GITHUB. 
+  
+    \href{https://github.com/fengyanshi/TMA_MAKER}{https://github.com/fengyanshi/TMA\_MAKER}
+  
+  \section{TO DO}
+  
+  1) time-varying JON or TMA wavemaker?
+  
+  2) incorporate the time-varying spectra (the previous work) into this module. 
+  
+  3) something else.
   
 \end{document}
 
