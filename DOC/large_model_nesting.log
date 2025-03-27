@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  26 MAR 2025 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  27 MAR 2025 15:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -413,12 +413,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<figures/two_grids.pdf, id=30, 469.47678pt x 397.80621pt>
+<figures/two_grids.pdf, id=34, 469.47678pt x 397.80621pt>
 File: figures/two_grids.pdf Graphic file (type pdf)
 <use figures/two_grids.pdf>
 Package pdftex.def Info: figures/two_grids.pdf  used on input line 59.
 (pdftex.def)             Requested size: 345.0pt x 292.33246pt.
-<figures/sponge_2d.jpg, id=33, 1171.37625pt x 878.28125pt>
+<figures/sponge_2d.jpg, id=37, 1171.37625pt x 878.28125pt>
 File: figures/sponge_2d.jpg Graphic file (type jpg)
 <use figures/sponge_2d.jpg>
 Package pdftex.def Info: figures/sponge_2d.jpg  used on input line 67.
@@ -427,56 +427,88 @@ Package pdftex.def Info: figures/sponge_2d.jpg  used on input line 67.
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./f
 igures/two_grids.pdf>] [3 <./figures/sponge_2d.jpg>]
-<figures/triangle.png, id=65, 585.68813pt x 504.38437pt>
+<figures/triangle.png, id=69, 585.68813pt x 504.38437pt>
 File: figures/triangle.png Graphic file (type png)
 <use figures/triangle.png>
 Package pdftex.def Info: figures/triangle.png  used on input line 108.
 (pdftex.def)             Requested size: 345.0pt x 297.12242pt.
  [4 <./figures/triangle.png>] [5]
-Overfull \hbox (6.70062pt too wide) in paragraph at lines 174--176
+<figures/test_sponge_R.jpg, id=85, 1171.37625pt x 878.28125pt>
+File: figures/test_sponge_R.jpg Graphic file (type jpg)
+<use figures/test_sponge_R.jpg>
+Package pdftex.def Info: figures/test_sponge_R.jpg  used on input line 172.
+(pdftex.def)             Requested size: 276.00105pt x 206.94559pt.
+<figures/test_sponge_A.jpg, id=86, 1171.37625pt x 878.28125pt>
+File: figures/test_sponge_A.jpg Graphic file (type jpg)
+<use figures/test_sponge_A.jpg>
+Package pdftex.def Info: figures/test_sponge_A.jpg  used on input line 180.
+(pdftex.def)             Requested size: 276.00105pt x 206.94559pt.
+<figures/test_sponge_width.jpg, id=87, 1171.37625pt x 878.28125pt>
+File: figures/test_sponge_width.jpg Graphic file (type jpg)
+<use figures/test_sponge_width.jpg>
+Package pdftex.def Info: figures/test_sponge_width.jpg  used on input line 188.
+
+(pdftex.def)             Requested size: 276.00105pt x 206.94559pt.
+
+Overfull \hbox (6.70062pt too wide) in paragraph at lines 207--209
 \OT1/cmr/m/n/10 In this ex-am-ple, the large-scale model re-sults are spec-i-fi
 ed in large[]model[]data.txt,
  []
 
-<figures/elevation_view.jpg, id=81, 2107.875pt x 1204.5pt>
+[6 <./figures/test_sponge_R.jpg>] [7 <./figures/test_sponge_A.jpg> <./figures/t
+est_sponge_width.jpg>]
+<figures/elevation_view.jpg, id=109, 2107.875pt x 1204.5pt>
 File: figures/elevation_view.jpg Graphic file (type jpg)
 <use figures/elevation_view.jpg>
-Package pdftex.def Info: figures/elevation_view.jpg  used on input line 181.
+Package pdftex.def Info: figures/elevation_view.jpg  used on input line 214.
 (pdftex.def)             Requested size: 345.0pt x 197.13493pt.
-<figures/uvmean_view.jpg, id=82, 2107.875pt x 1204.5pt>
+<figures/uvmean_view.jpg, id=110, 2107.875pt x 1204.5pt>
 File: figures/uvmean_view.jpg Graphic file (type jpg)
 <use figures/uvmean_view.jpg>
-Package pdftex.def Info: figures/uvmean_view.jpg  used on input line 189.
+Package pdftex.def Info: figures/uvmean_view.jpg  used on input line 222.
 (pdftex.def)             Requested size: 345.0pt x 197.13493pt.
-[6 <./figures/elevation_view.jpg>] [7 <./figures/uvmean_view.jpg>]
-(./large_model_nesting.aux)
+ [8 <./figures/elevation_view.jpg>] [9 <./figures/uvmean_view.jpg>] (./large_mo
+del_nesting.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `large_model_nesting.out' has not changed.
-(rerunfilecheck)             Checksum: 1E182BD0078363D1C789A86F9B2C8FA5;761.
+
+
+Package rerunfilecheck Warning: File `large_model_nesting.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `large_model_nesting.out':
+(rerunfilecheck)             Before: 86BC7D8A0EAA64150820596410632C40;953
+(rerunfilecheck)             After:  D54A0FB1002971423B4AAEEE2B0023C8;1011.
  ) 
 Here is how much of TeX's memory you used:
- 10788 strings out of 474116
- 165274 string characters out of 5743682
+ 10837 strings out of 474116
+ 166222 string characters out of 5743682
  1939187 words of memory out of 5000000
- 32998 multiletter control sequences out of 15000+600000
- 560682 words of font info for 47 fonts, out of 8000000 for 9000
+ 33034 multiletter control sequences out of 15000+600000
+ 563483 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,12n,79p,849b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on large_model_nesting.pdf (7 pages, 1478336 bytes).
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
+024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+24/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+Output written on large_model_nesting.pdf (9 pages, 1964143 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 74 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

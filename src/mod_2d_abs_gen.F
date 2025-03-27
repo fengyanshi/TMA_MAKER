@@ -318,9 +318,9 @@ SUBROUTINE MAP2D_SPONGE
            Sponge_s(Mloc,Nloc),Sponge_n(Mloc,Nloc))
   
   lim = 1.0_SP
-  R_sp = 0.85_SP
   R_sp = 0.95_SP
-  A_sp = 10.0_SP
+!  R_sp = 0.95_SP
+  A_sp = 100.0_SP
 
 ! west
 

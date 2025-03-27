@@ -157,6 +157,39 @@ eta, u, v data from a large-scale model (void line) \\
 0.0 0.0 - v \\
 0.0 0.0  
 
+\section{Long-wave passing sponge and parameters}
+
+The low-passing sponge is based on Larsen and Dancy (1983). Inside the sponge layer, the dependent variables $(\eta, u, v)$ are attenuated 
+
+The damping formula can be expressed as
+\be
+C_s = -\alpha_s^{\gamma^{i-1}}
+\ee
+where $i = 1, 2, ... n$. The width of sponge is $(n-1)*dx$.  Figures \ref{R} - \ref{width} show the distributions of the damping coefficient with different $\gamma$,  $\alpha_s$, and width (number of grid points). We choose the default values as   $\gamma$ = 0.85, $\alpha_s$ = 100, and width = 30 points. 
+
+ \begin{figure}
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{figures/test_sponge_R.jpg}
+ \caption{Distribution of damping coefficient with different $\gamma$ (R) }
+ \label{R}
+ \end{center}
+ \end{figure}  
+
+ \begin{figure}
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{figures/test_sponge_A.jpg}
+ \caption{Distribution of damping coefficient with different $\alpha_s$ (A) }
+ \label{A}
+ \end{center}
+ \end{figure}  
+ 
+  \begin{figure}
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{figures/test_sponge_width.jpg}
+ \caption{Distribution of damping coefficient with different width of sponge layer }
+ \label{width}
+ \end{center}
+ \end{figure}  
    
 \section{Example and results}
 
