@@ -101,6 +101,8 @@ Sponge_east_width =  0.0
 Sponge_south_width = 0.0 
 Sponge_north_width = 0.0 
 Iwidth_2D_Mapping = 30
+!R_sp = 0.85
+!A_sp = 100.0
 
   ! ----------------PHYSICS------------------------------ 
   ! parameters to control type of equations 

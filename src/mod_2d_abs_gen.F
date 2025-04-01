@@ -97,6 +97,7 @@ MODULE ABS_GEN_2D_MODULE
   REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Sc,S1,S2,S3
   INTEGER,DIMENSION(:,:),ALLOCATABLE :: nx1,ny1,nx2,ny2,nx3,ny3
   REAL(SP),DIMENSION(:,:),ALLOCATABLE :: x_grid1,y_grid1,x_grid2,y_grid2
+  REAL(SP) :: R_sp,A_sp
 
 CONTAINS
   
@@ -229,7 +230,38 @@ SUBROUTINE MAPPING_INITIAL
          WRITE(*,'(A40)')'Iwidth_2D_Mapping Default:  20 points'
          WRITE(3,'(A40)')'Iwidth_2D_Mapping Default:  20 points'
 # endif
-       ENDIF     
+       ENDIF 
+
+      CALL READ_FLOAT(R_sp,FILE_NAME,'R_sp',ierr)
+
+      IF(ierr==1)THEN
+        R_sp = 0.85_SP
+# if defined (PARALLEL)
+      if (myid.eq.0) THEN
+         WRITE(*,'(A40)')'Sponge layer R is :  0.85'
+         WRITE(3,'(A40)')'Sponge layer R is :  0.85'
+      endif
+# else
+         WRITE(*,'(A40)')'Sponge layer R is :  0.85'
+         WRITE(3,'(A40)')'Sponge layer R is :  0.85'
+# endif
+       ENDIF 
+
+      CALL READ_FLOAT(A_sp,FILE_NAME,'A_sp',ierr)
+
+      IF(ierr==1)THEN
+        A_sp = 100.0_SP
+# if defined (PARALLEL)
+      if (myid.eq.0) THEN
+         WRITE(*,'(A40)')'Sponge layer A is :  100.0'
+         WRITE(3,'(A40)')'Sponge layer A is :  100.0'
+      endif
+# else
+         WRITE(*,'(A40)')'Sponge layer A is :  100.0'
+         WRITE(3,'(A40)')'Sponge layer A is :  100.0'
+# endif
+       ENDIF 
+
 
       CALL READ_LOGICAL(OUT_MAP2D_ETA,FILE_NAME,'MAP2D_ETA',ierr) 
        IF(OUT_MAP2D_ETA)THEN
@@ -311,16 +343,13 @@ SUBROUTINE MAP2D_SPONGE
 # endif
                     
   IMPLICIT NONE
-  REAL(SP) :: ri,lim,Lstart,Lend,R_sp,A_sp
+  REAL(SP) :: ri,lim,Lstart,Lend
   REAL(SP),DIMENSION(:,:),ALLOCATABLE :: Sponge_w,Sponge_e,Sponge_s,Sponge_n
 
   ALLOCATE(Sponge_w(Mloc,Nloc),Sponge_e(Mloc,Nloc), &
            Sponge_s(Mloc,Nloc),Sponge_n(Mloc,Nloc))
   
   lim = 1.0_SP
-  R_sp = 0.95_SP
-!  R_sp = 0.95_SP
-  A_sp = 100.0_SP
 
 ! west
 

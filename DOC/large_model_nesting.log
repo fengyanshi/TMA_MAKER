@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  27 MAR 2025 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  28 MAR 2025 09:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -475,13 +475,10 @@ L3 programming layer <2024-02-20>
  ***********
 
 
-Package rerunfilecheck Warning: File `large_model_nesting.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `large_model_nesting.out':
-(rerunfilecheck)             Before: 86BC7D8A0EAA64150820596410632C40;953
-(rerunfilecheck)             After:  D54A0FB1002971423B4AAEEE2B0023C8;1011.
+Package rerunfilecheck Info: File `large_model_nesting.out' has not changed.
+(rerunfilecheck)             Checksum: D54A0FB1002971423B4AAEEE2B0023C8;1011.
  ) 
 Here is how much of TeX's memory you used:
  10837 strings out of 474116
@@ -505,7 +502,7 @@ live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-Output written on large_model_nesting.pdf (9 pages, 1964143 bytes).
+Output written on large_model_nesting.pdf (9 pages, 1964233 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams
