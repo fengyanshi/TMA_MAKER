@@ -171,7 +171,18 @@ R\_sp = float number ($\gamma$)
 
 A\_sp = float number ($\alpha_s$)
 
+\noindent
 (We keep the symbols, R\_sp and A\_sp, keeping consistent with the traditional sponge layers. )
+
+To check the sponge layer distribution, use SpongeMap.txt saved in your result folder. You can also check the large-scale model results (interpolated in the FUNWAVE domain). In input.txt, set 
+
+MAP2D\_ETA = T
+
+MAP2D\_U = T
+
+MAP2D\_V = T
+
+You will get output of ($\eta, u, v$) in files eta\_map\_xxxxx, u\_map\_xxxxx, and v\_map\_xxxxx. 
 
  \begin{figure}
 \begin{center}
