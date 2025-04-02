@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  28 MAR 2025 09:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.20)  2 APR 2025 08:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -436,21 +436,21 @@ Package pdftex.def Info: figures/triangle.png  used on input line 108.
 <figures/test_sponge_R.jpg, id=85, 1171.37625pt x 878.28125pt>
 File: figures/test_sponge_R.jpg Graphic file (type jpg)
 <use figures/test_sponge_R.jpg>
-Package pdftex.def Info: figures/test_sponge_R.jpg  used on input line 172.
+Package pdftex.def Info: figures/test_sponge_R.jpg  used on input line 178.
 (pdftex.def)             Requested size: 276.00105pt x 206.94559pt.
 <figures/test_sponge_A.jpg, id=86, 1171.37625pt x 878.28125pt>
 File: figures/test_sponge_A.jpg Graphic file (type jpg)
 <use figures/test_sponge_A.jpg>
-Package pdftex.def Info: figures/test_sponge_A.jpg  used on input line 180.
+Package pdftex.def Info: figures/test_sponge_A.jpg  used on input line 186.
 (pdftex.def)             Requested size: 276.00105pt x 206.94559pt.
 <figures/test_sponge_width.jpg, id=87, 1171.37625pt x 878.28125pt>
 File: figures/test_sponge_width.jpg Graphic file (type jpg)
 <use figures/test_sponge_width.jpg>
-Package pdftex.def Info: figures/test_sponge_width.jpg  used on input line 188.
+Package pdftex.def Info: figures/test_sponge_width.jpg  used on input line 194.
 
 (pdftex.def)             Requested size: 276.00105pt x 206.94559pt.
 
-Overfull \hbox (6.70062pt too wide) in paragraph at lines 207--209
+Overfull \hbox (6.70062pt too wide) in paragraph at lines 213--215
 \OT1/cmr/m/n/10 In this ex-am-ple, the large-scale model re-sults are spec-i-fi
 ed in large[]model[]data.txt,
  []
@@ -460,12 +460,12 @@ est_sponge_width.jpg>]
 <figures/elevation_view.jpg, id=109, 2107.875pt x 1204.5pt>
 File: figures/elevation_view.jpg Graphic file (type jpg)
 <use figures/elevation_view.jpg>
-Package pdftex.def Info: figures/elevation_view.jpg  used on input line 214.
+Package pdftex.def Info: figures/elevation_view.jpg  used on input line 220.
 (pdftex.def)             Requested size: 345.0pt x 197.13493pt.
 <figures/uvmean_view.jpg, id=110, 2107.875pt x 1204.5pt>
 File: figures/uvmean_view.jpg Graphic file (type jpg)
 <use figures/uvmean_view.jpg>
-Package pdftex.def Info: figures/uvmean_view.jpg  used on input line 222.
+Package pdftex.def Info: figures/uvmean_view.jpg  used on input line 228.
 (pdftex.def)             Requested size: 345.0pt x 197.13493pt.
  [8 <./figures/elevation_view.jpg>] [9 <./figures/uvmean_view.jpg>] (./large_mo
 del_nesting.aux)
@@ -473,10 +473,6 @@ del_nesting.aux)
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `large_model_nesting.out' has not changed.
 (rerunfilecheck)             Checksum: D54A0FB1002971423B4AAEEE2B0023C8;1011.
  ) 
@@ -502,7 +498,7 @@ live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
 e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
 24/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-Output written on large_model_nesting.pdf (9 pages, 1964233 bytes).
+Output written on large_model_nesting.pdf (9 pages, 1964800 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  136 compressed objects within 2 object streams

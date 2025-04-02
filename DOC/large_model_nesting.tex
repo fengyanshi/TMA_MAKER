@@ -165,7 +165,13 @@ The damping formula can be expressed as
 \be
 C_s = -\alpha_s^{\gamma^{i-1}}
 \ee
-where $i = 1, 2, ... n$. The width of sponge is $(n-1)*dx$.  Figures \ref{R} - \ref{width} show the distributions of the damping coefficient with different $\gamma$,  $\alpha_s$, and width (number of grid points). We choose the default values as   $\gamma$ = 0.85, $\alpha_s$ = 100, and width = 30 points. 
+where $i = 1, 2, ... n$. The width of sponge is $(n-1)*dx$.  Figures \ref{R} - \ref{width} show the distributions of the damping coefficient with different $\gamma$,  $\alpha_s$, and width (number of grid points). We choose the default values as   $\gamma$ = 0.85, $\alpha_s$ = 100, and width = 30 points. To change the parameters, you can specify $\gamma$ and  $\alpha_s$ as
+
+R\_sp = float number ($\gamma$)
+
+A\_sp = float number ($\alpha_s$)
+
+(We keep the symbols, R\_sp and A\_sp, keeping consistent with the traditional sponge layers. )
 
  \begin{figure}
 \begin{center}
